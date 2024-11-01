@@ -6,9 +6,11 @@ class StubRules {
   @IsString()
   @IsNotEmpty()
   name: string;
+
   @IsNumber()
   @IsNotEmpty()
   price: number;
+
   constructor(data: any) {
     Object.assign(this, data);
   }
